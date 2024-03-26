@@ -56,7 +56,7 @@ function updateSlide() {
 	const tagLine = document.querySelector("#banner p");	
 	const dots = document.querySelectorAll(".dot");  
 
-// Met à jour l'image et le texte de la diapositive affiché dans le carrousel
+// Met à jour l'image et le texte de la diapositive affiché dans le c
 
 	bannerImg.src = `./assets/images/slideshow/${slides[currentSlideIndex].image}`; 
 	tagLine.innerHTML = slides[currentSlideIndex].tagLine; 
