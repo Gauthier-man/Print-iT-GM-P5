@@ -24,13 +24,15 @@ let currentSlideIndex = 0; // Déclare une variable 'currentSlideIndex et l'init
 //Ajout des Event Listeners sur les flèches
 
 const leftArrow = document.querySelector('.arrow_left') 
+const rightArrow = document.querySelector('.arrow_right')
+
 leftArrow.addEventListener('click', function(){ 
 	currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;  
 	updateSlide(); 
 
 })
 
-const rightArrow = document.querySelector('.arrow_right')
+
 rightArrow.addEventListener('click', function() {
 	currentSlideIndex = (currentSlideIndex + 1) % slides.length; 
   updateSlide(); 
