@@ -27,7 +27,6 @@ const leftArrow = document.querySelector('.arrow_left') // Sélectionne l'élém
 const rightArrow = document.querySelector('.arrow_right')
 
 leftArrow.addEventListener('click', function(){ // Ajout d'un event listener sur l'élément 'leftArrow', 
-	// alert('Bonjour')
 	currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;  // Réduit l'indice de la diapositive pour permettre une navigation dans le carrousel
 	updateSlide(); // Met à jour l'affichage pour montrer la diapositive
 
@@ -35,7 +34,6 @@ leftArrow.addEventListener('click', function(){ // Ajout d'un event listener sur
 
 
 rightArrow.addEventListener('click', function() {
-	// alert('Bonjour')
 	currentSlideIndex = (currentSlideIndex + 1) % slides.length; // Passer à la diapositive suivante dans le carrousel
   updateSlide(); 
 
